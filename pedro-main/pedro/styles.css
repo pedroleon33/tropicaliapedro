@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+    --laranja-claro: #50C878;
+    --verde-tropical: #50C878;
+    --amarelo-dourado: #F0C808;
+    --cor-fundo: #f4f4f4;
+    --cor-escura: #f31616;  /* Ajustando para um tom mais escuro */
+    --cor-clara: #ffffff;
+    --cor-link: #0b5ed7;  /* Cor de link mais forte */
+    --cor-botao: #42c9eb; /* Cor do botão */
+}
+
+/* Corpo e Tipografia */
+body {
+    font-size: 1.1rem;  /* Tamanho da fonte ajustado */
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-escura);  /* Texto mais escuro */
+    line-height: 1.6;
+}
+
+/* Títulos principais */
+h1, h2, h3 {
+    font-weight: 700;  /* Fontes mais pesadas para melhor contraste */
+    color: var(--laranja-claro);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--cor-link);  /* Cor de links mais visível */
+    font-weight: bold;  /* Deixando o texto do link mais forte */
+}
+
+a:hover,
+a:focus {
+    color: var(--amarelo-dourado);
+    text-decoration: underline;
+}
+
+/* Menu de navegação */
+.nav-link {
+    color: var(--cor-escura);  /* Links mais escuros para contraste */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:focus {
+    outline: 3px solid var(--verde-tropical);
+    outline-offset: 2px;
+}
+
+/* Seção de início */
+.inicio-fundo {
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 40px;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inicio-fundo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Garantir que todas as imagens tenham o mesmo tamanho */
+.img-tamanho-fixo {
+    width: 100%;  /* Ajusta para o 100% do container */
+    height: 300px;  /* Altura fixa */
+    object-fit: cover;  /* Corta a imagem de forma que cubra a área */
+    border-radius: 10px;  /* Bordas arredondadas */
+}
+
+/* Botão de início */
+.botao-inicio {
+    background-color: var(--laranja-claro);
+    border-radius: 10px;
+    padding: 15px 30px;
+    color: var(--cor-clara);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.botao-inicio:focus {
+    outline: 3px solid var(--verde-tropical);
+    outline-offset: 2px;
+}
+
+/* Seção de Tropicalia */
+#tropicalia {
+    background: url('img/flor.png') top right no-repeat, url('img/flor-esquerda.png') bottom left no-repeat;
+    background-size: 180px 180px;
+    padding: 50px;
+}
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.8rem;  
+    font-weight: 700;  
+    text-align: center;
+    color: var(--laranja-claro);
+}
+
+/* Galeria */
+#galeria {
+    background-color: #FAF4F4;
+    padding: 2rem 0;
+}
+
+.fundo-galeria {
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background-size: 180px 180px;
+}
+
+#galeria .col-md-4 img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#galeria .col-md-4 img:hover {
+    transform: scale(1.05);
+}
+
+/* Formulário de Contato */
+#contato {
+    background-image: url('img/4965007.jpeg');
+    background-size: cover;
+    padding: 4rem 0;
+    color: white;
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(248, 5, 5, 0.945);
+    font-weight: bold;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-control {
+    background-color: #F1EDEF;
+    border: 2px solid var(--laranja-claro);
+    font-size: 1rem;  
+    color: var(--cor-escura);  
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px var(--laranja-claro);
+    border-color: var(--laranja-claro);
+}
+
+/* Botões de Acessibilidade */
+#acesibilidad button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--verde-tropical);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#acesibilidad button:focus {
+    outline: 3px solid var(--laranja-claro);
+    outline-offset: 2px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--cor-escura);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer i {
+    font-size: 2rem;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+footer i:hover,
+footer i:focus {
+    color: var(--verde-tropical);
+    outline: 3px solid var(--laranja-claro);
+    outline-offset: 2px;
+}
+
+/* Visibilidade de foco */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid var(--laranja-claro);
+    outline-offset: 2px;
+}
+
+/* Adaptabilidade de tamanhos de fonte */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .inicio-fundo {
+        flex-direction: column;
+        text-align: center;
+    }
+}
