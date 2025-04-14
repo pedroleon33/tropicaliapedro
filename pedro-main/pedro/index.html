@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Explore o movimento Tropicália e sua influência na música e cultura brasileira.">
+    <meta name="author" content="Start by Alura">
+    <title>Tropicália - A Revolução Cultural</title>
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="img/lossy-page1-640px-Caetano_Veloso_no_III_Festival_da_Música_Popular.tif.jpg" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/logotropicalia.png" alt="Logo da Tropicália" class="nav-img" loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acesibilidad" class="menu-acesibilidade">
+                <button id="Aumentar-fonte" class="btn btn-primary" aria-label="Aumentar tamanho da fonte">Aumentar Fonte</button>
+                <button id="diminuir-fonte" class="btn btn-primary" aria-label="Diminuir tamanho da fonte">Diminuir Fonte</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
+                    <!-- Imagem de Gilberto Gil -->
+                    <img src="https://images.unsplash.com/photo-1603415473589-f2f85a74d3b7" alt="Gilberto Gil - Tropicália" class="mb-3" width="563" height="278" loading="lazy">
+                    <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold" aria-label="Conheça mais sobre Tropicália">Quero conhecer!</a>
+                </div>
+                <!-- Imagem de Raul Seixas -->
+                <img src="https://images.unsplash.com/photo-1516231161304-05382deaa039" alt="Raul Seixas, ícone da música brasileira" class="img-inicio" loading="lazy">
+            </div>
+        </section>
+
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+            <div class="container d-flex align-items-center ">
+                <div class="col-5">
+                    <h2>O que foi a Tropicália?</h2>
+                    <p class="p-2">Os tropicalistas transformaram a música popular brasileira com vanguarda, misturando elementos do rock psicodélico e da música erudita, criando uma sonoridade única e inovadora.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2 class="text-center pt-5">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria ">
+                <div class="row justify-content-md-center">
+                    <!-- Imagem de Os Mutantes -->
+                    <div class="col-md-4">
+                        <img src="https://images.unsplash.com/photo-1606787365145-d3b7f342946b" alt="Os Mutantes, banda revolucionária do movimento Tropicália" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <!-- Imagem de Caetano Veloso -->
+                    <div class="col-md-4">
+                        <img src="https://images.unsplash.com/photo-1565124370-0f51b5dbed83" alt="Caetano Veloso, um dos principais artistas da Tropicália" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo" aria-label="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email" aria-label="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao" aria-label="Enviar formulário">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp" aria-label="WhatsApp"></i>
+        <i class="bi bi-instagram" aria-label="Instagram"></i>
+        <i class="bi bi-tiktok" aria-label="TikTok"></i>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
